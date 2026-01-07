@@ -1,18 +1,20 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { Button } from "@/components/ui/button"
-import { Menu, X } from "lucide-react"
+import { useState } from "react";
+import { Button } from "../ui/button";
+import { Menu, X } from "lucide-react";
 
 export function Header() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-16 sm:h-20">
           <div className="flex items-center gap-2">
-            <span className="text-xl sm:text-2xl font-semibold tracking-tight text-balance">M4 Tailoring</span>
+            <span className="text-xl sm:text-2xl font-semibold tracking-tight text-balance">
+              M4 Tailoring
+            </span>
           </div>
 
           <nav className="hidden md:flex items-center gap-8">
@@ -40,11 +42,21 @@ export function Header() {
             >
               Contact
             </a>
-            <Button className="bg-primary text-primary-foreground hover:bg-primary/90">Book Appointment</Button>
+            <Button className="bg-primary text-primary-foreground hover:bg-primary/90">
+              Book Appointment
+            </Button>
           </nav>
 
-          <button className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)} aria-label="Toggle menu">
-            {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          <button
+            className="md:hidden"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label="Toggle menu"
+          >
+            {isMenuOpen ? (
+              <X className="w-6 h-6" />
+            ) : (
+              <Menu className="w-6 h-6" />
+            )}
           </button>
         </div>
 
@@ -83,5 +95,5 @@ export function Header() {
         )}
       </div>
     </header>
-  )
+  );
 }

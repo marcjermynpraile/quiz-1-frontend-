@@ -1,9 +1,9 @@
 "use client"
 
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
+import { Button } from "../ui/button"
+import { Input } from "../ui/input"
+import { Textarea } from "../ui/textarea"
+import { Card } from "../ui/card"
 import { MapPin, Phone, Mail, Clock } from "lucide-react"
 
 export function Contact() {
@@ -18,7 +18,7 @@ export function Contact() {
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
           <div className="space-y-6">
             <Card className="border-border">
-              <CardContent className="p-6">
+              <div className="p-6">
                 <form className="space-y-4">
                   <div className="space-y-2">
                     <label htmlFor="name" className="font-mono text-sm">
@@ -48,7 +48,7 @@ export function Contact() {
                     Send Message
                   </Button>
                 </form>
-              </CardContent>
+              </div>
             </Card>
           </div>
 
@@ -60,11 +60,11 @@ export function Contact() {
               <div>
                 <h3 className="font-medium mb-1">Location</h3>
                 <p className="font-mono text-sm text-muted-foreground">
-                  123 Fashion Avenue
+                  Sto.Rosario
                   <br />
-                  Downtown District
+                  Plaridel Street
                   <br />
-                  City, State 12345
+                  Angeles City, Pampanga
                 </p>
               </div>
             </div>
@@ -85,7 +85,7 @@ export function Contact() {
               </div>
               <div>
                 <h3 className="font-medium mb-1">Email</h3>
-                <p className="font-mono text-sm text-muted-foreground">info@elitethreads.com</p>
+                <p className="font-mono text-sm text-muted-foreground">Marc Jermyn Praile</p>
               </div>
             </div>
 

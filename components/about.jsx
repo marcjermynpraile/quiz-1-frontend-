@@ -14,7 +14,7 @@ export function About() {
           </p>
           <div className="grid sm:grid-cols-3 gap-8 pt-8">
             <div className="space-y-2">
-              <div className="text-4xl font-light text-primary">25+</div>
+              <div className="text-4xl font-light text-primary">10</div>
               <div className="font-mono text-sm text-muted-foreground">Years Experience</div>
             </div>
             <div className="space-y-2">
